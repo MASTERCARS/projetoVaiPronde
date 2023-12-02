@@ -1,0 +1,16 @@
+{
+    "name": "crech/projeto-vai-pronde",
+    "type": "projeto",
+    "autoload": {
+        "psr-4": {
+            "ProjetoVaiPronde\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vítor Dourado",
+            "email": "vitorsouzadourado9@gmail.com"
+        }
+    ],
+    "require": {}
+}
