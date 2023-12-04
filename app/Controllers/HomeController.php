@@ -8,6 +8,7 @@ class HomeController extends Controller{
 
     public function index()
     {
-      $this->view('inicial');
+    $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('inicial',$dados);
     }
 }

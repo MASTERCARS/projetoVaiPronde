@@ -2,9 +2,11 @@
 
 namespace ProjetoVaiPronde\Controllers;
 
-class ErroController{
+use ProjetoVaiPronde\Core\Controller;
+
+class ErroController extends Controller{
     public function erro404()
     {
-        echo "Erro 404 - Pagina não encontrada";
+     $this->view('404');
     }
 }

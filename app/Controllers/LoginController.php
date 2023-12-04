@@ -2,16 +2,16 @@
 
 namespace ProjetoVaiPronde\Controllers;
 
-use ProjetoVaiPronde\Core
+use ProjetoVaiPronde\Core\Controller;
 
 class LoginController extends Controller{
     public function login()
     {
-        echo "pagina login";
+        $this->view('login',['pagina' => 'Pagina de login']);
     }
 
     public function criarconta()
     {
-      echo  "Pagina de Cadastro de conta";
+      $this->view('conta');
     }
 }
