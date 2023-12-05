@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro e Login</title>
-    <link rel="stylesheet" type="text/css" href="<?=css('estilo')?>" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" type="text/css" href="<?=css('style')?>" />
+      
+
+   <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+crossorigin="anonymous">
+  </script>
   
   </head>
   <body>
@@ -87,20 +89,21 @@
                 <p>No VaiP'ronde a gente te recebe de braços abertos</p>
                 <button class="btn transparent" id="sign-up-btn">Se Inscreva</button>
             </div>
-            <img src="./img/turismo.png" class="image" alt="">
+
+            <img src="<?=URL_BASE.'public/img/turismo.png'?>" class="image" alt="">
         </div>
 
         <div class="panel right-panel">
             <div class="content">
                 <h3>Já faz parte?</h3>
                 <p>No VaiP'ronde você é sempre bem vindo</p>
-                <button class="btn transparent" id="sign-in-btn">Faça o Login</button>
+               <a href ="motoristaapp.php"> <button class="btn transparent" id="sign-in-btn" >Faça o Login</button> </a>
             </div>
-            <img src="./img/guia.png" class="image" alt="">
+            <img src="<?=URL_BASE.'public/img/guia.png'?>" class="image" alt="">
         </div>
       </div>
     </div>
 
-    <script src="./app.js"></script>
+    <script src="<?=URL_BASE.'app/Views/app.js'?>"></script>
   </body>
 </html>

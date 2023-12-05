@@ -16,10 +16,10 @@
 <body>
   <header>
     <nav>
-      <img class="logo" src="assets/logo.gif" alt="Miami">
+      <img class="logo" src="<?=URL_BASE.'public/assets/logo.gif'?>" alt="Miami">
       <ul>
         <li><a href="#home">Inicio</a></li>
-        <li><a href="viagem.php">Viagens</a></li>
+        <li><a href="<?=URL_BASE.'app/views/viagem.view.php'?>">Viagens</a></li>
         <li><a href="#servicos">Sobre</a></li>
         <li><a href="cadastro.php">Cadastro</a></li>
       </ul>
