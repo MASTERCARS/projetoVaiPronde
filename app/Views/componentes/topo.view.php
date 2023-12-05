@@ -7,6 +7,10 @@
   <title>Vai P'ronde?</title>
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="<?=css('estilo')?>">
+  <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
 </head> 
 
 <body>

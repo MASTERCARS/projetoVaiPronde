@@ -14,9 +14,9 @@ function css(string $arquivo) :string
 {
     return URL_BASE."public/css/{$arquivo}.css";
 }
-function componente(string $componente) 
+function componente(string $componente)
 {
-   require PASTA_VIEW . "componentes/{$componente}.view.php";
+    require PASTA_VIEW . "componentes/{$componente}.view.php";
 }
 
 $url = $_GET['url'] ?? "";
