@@ -18,18 +18,42 @@ class Router{
         {
             $url = "/".$url;
             $rotas = static::$rotas;
+            
 
             if( array_key_exists($url,$rotas) ){
                 [$controller,$metodo] = $rotas[$url];
+                static::carregaController($controller,$metodo);
             }else{
-                [$controller,$metodo] = $rotas['__erro'];
+                static::erro('404',404);
             }
-            static::carregaController($controller,$metodo);
+            
         }
- static function carregaController($controller,$metodo)
+
+
+protected static function carregaController($controller,$metodo)
 {
     $controller = NS_CONTROLLERS . $controller;
-    $ctr = new $controller();
-    $ctr->$metodo();
+    if(class_exists($controller)){
+        $ctr = new $controller();
+        if(method_exists($ctr,$metodo)){
+            http_response_code(200);
+            $ctr->$metodo();
+        }else{
+            static::erro('metodo',405);
+        }
+    
+    }else{
+        static::erro('controller',405);
+    }
+}
+
+protected static function erro(string $tipo,int $codigo = 400)
+{
+    http_response_code($codigo);
+    $controller = NS_CONTROLLERS.'ErroController';
+    $ctr = new $controller;
+    $ctr->erro($tipo);
+
+
 }
     }
