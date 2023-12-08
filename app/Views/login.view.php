@@ -1,12 +1,12 @@
 <?php
   if(isset($_POST['submit'])){
-    /*
+    
     print_r('Usuario: ' . $_POST['usuario']);
     print_r("<br>");
     print_r('email: ' . $_POST['email']);
     print_r("<br>");
     print_r('Senha: ' . $_POST['senha']);
-    */
+    /*
 
     include_once('configbd.view.php');
 
@@ -17,7 +17,7 @@
 
     $result = mysqli_query($conexao, "INSERT INTO usuarios(usuario, email, senha) VALUES ('$usuario', '$email', '$senha')");
 
-  
+  */
   }
 
 ?>
@@ -73,7 +73,7 @@ crossorigin="anonymous">
           </form>
 
 
-          <form action="http://localhost/projetoVaiPronde/app/Views/login.view.php" class="sign-up-form">
+          <form action="<?=URL_BASE .'app/Views/testar.view.php'?>" class="sign-up-form">
             <h2 class="title">SE INSCREVA</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -123,11 +123,8 @@ crossorigin="anonymous">
             <div class="content">
                 <h3>Já faz parte?</h3>
                 <p>No VaiP'ronde você é sempre bem vindo</p>
-<<<<<<< HEAD
-                <button class="btn transparent" id="sign-in-btn" >Faça o Login</button> 
-=======
-               <a href ="motoristaapp.php"> <button class="btn transparent" id="sign-in-btn" >Faça o Login</button> </a>
->>>>>>> 897a6f7baa17f4e514b5194b6b922f17e3fc400f
+                
+               <button class="btn transparent" id="sign-in-btn" >Faça o Login</button> 
             </div>
             <img src="<?=URL_BASE.'public/img/guia.png'?>" class="image" alt="">
         </div>

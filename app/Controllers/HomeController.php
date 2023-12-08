@@ -34,7 +34,7 @@ class HomeController extends Controller{
       $dados = ['titulo' => 'Projeto VaiPronde 2023'];
       $this->view('viagemdetalhe',$dados);
     }
-<<<<<<< HEAD
+
     public function configbd()
     {
       $dados = ['titulo' => 'Projeto VaiPronde 2023'];
@@ -63,9 +63,15 @@ class HomeController extends Controller{
       $dados = ['titulo' => 'Projeto VaiPronde 2023'];
       $this->view('vinculo',$dados);
     }
+
+    public function testar()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('testar',$dados);
+    }
    
   }
-=======
 
-}
->>>>>>> 897a6f7baa17f4e514b5194b6b922f17e3fc400f
+
+
+
