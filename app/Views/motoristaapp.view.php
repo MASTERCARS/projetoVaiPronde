@@ -41,6 +41,7 @@
         <nav>
 
         <ul>
+<<<<<<< HEAD
         <strong><li><a href="<?=linkrota()?>">Voltar</a></li></strong>
             <strong> <li><a href="<?=linkrota('motoristaapp')?>">Home</a></li></strong>
             <strong><li><a href="<?=linkrota('vinculo')?>">Vinculação</a></li></strong>
@@ -48,6 +49,13 @@
             <strong><li><a href="<?=linkrota('financeiro')?>">Financeiro</a></li></strong>
             <strong><li><a href="<?=linkrota('perfil')?>" class="perfil">Perfil</a></li></strong>
 
+=======
+            <li><a href="motoristaapp.view.php" class="home">Home</a></li>
+            <li><a href="vinculo.html">Vinculação</a></li>
+            <li><a href="standby.html">Standby</a></li>
+            <li><a href="financeiro.html">Financeiro</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+>>>>>>> 897a6f7baa17f4e514b5194b6b922f17e3fc400f
 
         </ul>
         </nav>

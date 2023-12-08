@@ -18,11 +18,18 @@
     <nav>
       <img class="logo" src="<?=URL_BASE.'public/assets/logo.gif'?>" alt="Miami">
       <ul>
+<<<<<<< HEAD
         <li><a href="<?=linkrota()?>">Inicio</a></li>
         <li><a href="<?=linkrota('viagem')?>">Viagens</a></li>
         <li><a href="<?=linkrota('sobre')?>">Sobre</a></li>
         <li><a href="<?=linkrota('login')?>">Cadastro</a></li>
         <li><a href="<?=linkrota('motoristaapp')?>">Motoristas</a></li>
+=======
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="<?=URL_BASE.'app/views/viagem.view.php'?>">Viagens</a></li>
+        <li><a href="#servicos">Sobre</a></li>
+        <li><a href="cadastro.php">Cadastro</a></li>
+>>>>>>> 897a6f7baa17f4e514b5194b6b922f17e3fc400f
       </ul>
     </nav>
 

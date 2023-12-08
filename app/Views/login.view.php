@@ -123,7 +123,11 @@ crossorigin="anonymous">
             <div class="content">
                 <h3>Já faz parte?</h3>
                 <p>No VaiP'ronde você é sempre bem vindo</p>
+<<<<<<< HEAD
                 <button class="btn transparent" id="sign-in-btn" >Faça o Login</button> 
+=======
+               <a href ="motoristaapp.php"> <button class="btn transparent" id="sign-in-btn" >Faça o Login</button> </a>
+>>>>>>> 897a6f7baa17f4e514b5194b6b922f17e3fc400f
             </div>
             <img src="<?=URL_BASE.'public/img/guia.png'?>" class="image" alt="">
         </div>

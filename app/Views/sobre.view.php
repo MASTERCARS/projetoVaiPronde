@@ -24,10 +24,17 @@
 
         <nav class="menu">
             <ul>
+<<<<<<< HEAD
                 <li><a href="<?=linkrota('')?>"><strong>Início</strong></a></li>
                 <li><a href="<?=linkrota('viagem')?>"><strong>Viagens</strong></a></li>
                 <li><a href="<?=linkrota('sobre')?>"><strong>Sobre</strong></a></li>
                 <li><a href="<?=linkrota('login')?>"><strong>Login</strong></a></li>
+=======
+                <li><a href="index.php"><strong>Início</strong></a></li>
+                <li><a href="viagem.php"><strong>Viagens</strong></a></li>
+                <li><a href="sobre.php"><strong>Sobre</strong></a></li>
+                <li><a href="cadastro.php"><strong>Trabalhe Conosco</strong></a></li>
+>>>>>>> 897a6f7baa17f4e514b5194b6b922f17e3fc400f
             </ul>
         </nav>
     </header>
