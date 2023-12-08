@@ -43,7 +43,7 @@ crossorigin="anonymous">
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="<?=URL_BASE.'/app/views/login.view.php'?>" class="sign-in-form" method ="POST">
+          <form action="" class="sign-in-form" method ="POST">
             <h2 class="title">LOGAR</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -53,7 +53,7 @@ crossorigin="anonymous">
               <i class="fas fa-lock"></i>
               <input type="password" name="senha" placeholder="Senha" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input value="Login" class="btn solid" />
 
             <p class="social-text">Siga nas redes sociais</p>
             <div class="social-media">
@@ -73,7 +73,7 @@ crossorigin="anonymous">
           </form>
 
 
-          <form action="" class="sign-up-form">
+          <form action="http://localhost/projetoVaiPronde/app/Views/login.view.php" class="sign-up-form">
             <h2 class="title">SE INSCREVA</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -132,4 +132,4 @@ crossorigin="anonymous">
 
     <script src="<?=URL_BASE.'app/Views/app.js'?>"></script>
   </body>
-</html> 
+</html>
