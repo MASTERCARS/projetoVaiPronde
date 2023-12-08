@@ -1,5 +1,9 @@
 <?php
 
+
+
+include_once('/../config.php');
+
 $viagem = [
     [
         "promocao"=>"promoção",

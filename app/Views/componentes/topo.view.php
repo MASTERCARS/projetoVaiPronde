@@ -22,6 +22,7 @@
         <li><a href="<?=linkrota('viagem')?>">Viagens</a></li>
         <li><a href="<?=linkrota('sobre')?>">Sobre</a></li>
         <li><a href="<?=linkrota('login')?>">Cadastro</a></li>
+        <li><a href="<?=linkrota('motoristaapp')?>">Motoristas</a></li>
       </ul>
     </nav>
 

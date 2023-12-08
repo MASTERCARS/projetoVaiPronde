@@ -57,16 +57,16 @@ crossorigin="anonymous">
 
             <p class="social-text">Siga nas redes sociais</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
+              <a href="<?=linkrota('')?>" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="<?=linkrota('viagem')?>" class="social-icon">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="<?=linkrota('vsobre')?>" class="social-icon">
                 <i class="fab fa-google"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="<?=linkrota('login')?>" class="social-icon">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
@@ -91,16 +91,16 @@ crossorigin="anonymous">
 
             <p class="social-text">Siga nas redes sociais</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
+              <a href="<?=linkrota('index')?>" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="<?=linkrota('viagem')?>" class="social-icon">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="<?=linkrota('sobre')?>" class="social-icon">
                 <i class="fab fa-google"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="<?=linkrota('login')?>" class="social-icon">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>

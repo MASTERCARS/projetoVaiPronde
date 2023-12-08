@@ -25,10 +25,10 @@
 <nav>
       <img class="logo" src="<?=URL_BASE.'public/imagem/logo.gif'?>" alt="Miami">
       <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="viagem.php">Viagens</a></li>
-        <li><a href="http://localhost/viag/projetoVaiPronde/app/views/sobre.view.php">Sobre</a></li>
-        <li><a href="cadastro.php">Cadastro</a></li>
+        <li><a href="<?=linkrota('')?>">Inicio</a></li>
+        <li><a href="<?=linkrota('viagem')?>">Viagens</a></li>
+        <li><a href="<?=linkrota('sobre')?>">Sobre</a></li>
+        <li><a href="<?=linkrota('login')?>">Cadastro</a></li>
       </ul>
     </nav>
 </header>

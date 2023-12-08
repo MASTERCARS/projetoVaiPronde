@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Financeiro</title>
-  <link rel="stylesheet" href="css/motorista.css">
+  <title>Standby</title>
+  <link rel="stylesheet" href="<?=css('motorista')?>">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <div class="header__container">
           <div class="top__menu">
             <div class="menu" onclick="toggleMenu(this)">
-                <img src="imagens/menu-app-vpo.png" alt="Menu">
+                <img src="<?=URL_BASE.'public/imagens/menu2.png'?>" alt="Menu">
                 <ul class="submenu">
                     <li><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
@@ -26,12 +26,12 @@
         </div>
         
             <div class="top__menu">
-              <p>Vai Pronde? <br> para motoristas !</p>
+            <strong> <p>Vai Pronde? <br> para motoristas !</p></strong>
             </div>
             
             <div class="top__menu">
                 <div class="van">
-                <img src="imagens/logo.gif">
+               <a href="<?=linkrota()?>"> <img src="<?=URL_BASE.'public/imagens/logo.gif'?>"></a>
             </div>
             </div>
             
@@ -41,25 +41,25 @@
         <nav>
 
         <ul>
-            <li><a href="motoristaapp.html">Home</a></li>
-            <li><a href="vinculo.html">Vinculação</a></li>
-            <li><a href="standby.html">Standby</a></li>
-            <li><a href="financeiro.html" class="financeiro">Financeiro</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
+        <strong><li><a href="<?=linkrota()?>">Voltar</a></li></strong>
+            <strong> <li><a href="<?=linkrota('motoristaapp')?>">Home</a></li></strong>
+            <strong><li><a href="<?=linkrota('vinculo')?>">Vinculação</a></li></strong>
+            <strong><li><a href="<?=linkrota('standby')?>">Standby</a></li></strong>
+            <strong><li><a href="<?=linkrota('financeiro')?>">Financeiro</a></li></strong>
+            <strong><li><a href="<?=linkrota('perfil')?>" class="perfil">Perfil</a></li></strong>
+
 
         </ul>
         </nav>
     </header>
 
-    <div class="home__container">
+    <div class="home__containers">
       <div class="linha"><hr></div>
-      <div class="encapsulo2__perfil">
-        <h1>Financeiro</h1>
-      
-          <div class="lados">Saldo Disponivel:<br><h1>R$ 355,09</h1> <div class="bloco1"></div></div>
-          <div class="lados">Saldo Pendente:<br><h1>R$ 0,00</h1><div class="bloco2"></div></div>
-            <button>Efetuar Saque</button>
-        </div>
+        <div class="standby">
+            <h2>Em Standby - Sem Rotas Disponíveis</h2>
+            <p>Aguarde enquanto procuramos por viagens para você.</p>
+            <button>Atualizar</button>
+          </div>
   </div>
 
 

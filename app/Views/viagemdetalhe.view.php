@@ -1,5 +1,5 @@
 <?php
-require "dadosviagem.php";
+require "dadosviagem.view.php";
 
 //caso o i não seja passado atravez do metodo get, irei mostrar uma mensagem de erro.
 if(!isset($_GET["i"])){
@@ -25,7 +25,7 @@ $f = $viagem[$indice];
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Detalhes</title>
 </head>
 <body>
     <section id="sessao1">

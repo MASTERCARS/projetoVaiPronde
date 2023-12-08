@@ -40,4 +40,27 @@ class HomeController extends Controller{
       $this->view('configbd',$dados);
     }
 
-}
+    public function financeiro()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('financeiro',$dados);
+    }
+
+    public function standby()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('standby',$dados);
+    }
+    public function perfil()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('perfil',$dados);
+    }
+
+    public function vinculo()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('vinculo',$dados);
+    }
+   
+  }

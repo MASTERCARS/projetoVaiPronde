@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App Motorista</title>
-  <link rel="stylesheet" href="<?=css('estilo')?>">
+  <link rel="stylesheet" href="<?=css('motorista')?>">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <div class="header__container">
           <div class="top__menu">
             <div class="menu" onclick="toggleMenu(this)">
-                <img src="imagens/menu-app-vpo.png" alt="Menu">
+              <img src="<?=URL_BASE.'public/imagens/menu2.png'?>" alt="Menu">
                 <ul class="submenu">
                     <li><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
@@ -26,12 +26,12 @@
         </div>
         
             <div class="top__menu">
-                <p>Vai Pronde? <br> para motoristas !</p>
+            <strong> <p>Vai Pronde? <br> para motoristas !</p></strong>
             </div>
             
             <div class="top__menu">
                 <div class="van">
-                <img src="imagens/logo.gif">
+               <a href="<?=linkrota()?>"> <img src="<?=URL_BASE.'public/imagens/logo.gif'?>"></a>
             </div>
             </div>
             
@@ -41,11 +41,13 @@
         <nav>
 
         <ul>
-            <li><a href="motoristaapp.view.php" class="home">Home</a></li>
-            <li><a href="vinculo.html">Vinculação</a></li>
-            <li><a href="standby.html">Standby</a></li>
-            <li><a href="financeiro.html">Financeiro</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
+        <strong><li><a href="<?=linkrota()?>">Voltar</a></li></strong>
+            <strong> <li><a href="<?=linkrota('motoristaapp')?>">Home</a></li></strong>
+            <strong><li><a href="<?=linkrota('vinculo')?>">Vinculação</a></li></strong>
+            <strong><li><a href="<?=linkrota('standby')?>">Standby</a></li></strong>
+            <strong><li><a href="<?=linkrota('financeiro')?>">Financeiro</a></li></strong>
+            <strong><li><a href="<?=linkrota('perfil')?>" class="perfil">Perfil</a></li></strong>
+
 
         </ul>
         </nav>
@@ -58,7 +60,7 @@
         <div class="home__saldo__semanal">
      <div class="conteiner2">
      <div class="e1">Atividade da Semana</div>
-     <div class="e2"><div class="bto"><img src="imagens/rec.png" alt=""></div>
+     <div class="e2"><div class="bto"><img src="<?=URL_BASE.'public/imagens/rec.png'?>" alt=""></div>
      </div>
      <div class="e3">Saldo</div>
      <div class="e4">R$ 355,09</div>
