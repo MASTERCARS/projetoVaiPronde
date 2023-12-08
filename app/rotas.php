@@ -15,5 +15,7 @@ Router::add('/financeiro','HomeController','financeiro');
 Router::add('/standby','HomeController','standby');
 Router::add('/perfil','HomeController','perfil');
 Router::add('/vinculo','HomeController','vinculo');
-
 Router::add('/cadastro','HomeController','cadastro');
+Router::add('/redirecionamento','HomeController','redirecionamento');
+Router::add('/testelogin','HomeController','testelogin');
+Router::add('/sistema','HomeController','sistema');

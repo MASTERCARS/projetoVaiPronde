@@ -74,6 +74,23 @@ class HomeController extends Controller{
       $dados = ['titulo' => 'Projeto VaiPronde 2023'];
       $this->view('cadastro',$dados);
     }
+
+    public function redirecionamento()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('redirecionamento',$dados);
+    }
+    public function testelogin()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('testelogin',$dados);
+    }
+    public function sistema()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('sistema',$dados);
+    }
+
   }
 
 

@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f2f2f2;
+  background-color: #7FFFD4;
 }
 
 .login-container {
@@ -52,7 +52,7 @@ input {
   border-radius: 4px;
 }
 
-button {
+.inputSumit {
   width: 100%;
   padding: 10px;
   background-color: #3498db;
@@ -63,25 +63,28 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.inputSumit:hover {
   background-color: #2980b9;
 }
 </style>
 </head>
 <body>
+<a href="<?=linkrota()?>"><img src="<?=URL_BASE.'public/imagens/logo.gif'?>"></a><br><br>
+
+
 
 <div class="login-container">
-  <form action="seu-arquivo-php-de-login.php" method="POST" class="login-form">
+  <form action="http://localhost/projetovaipronde/app/Views/testelogin.view.php" method="POST" class="login-form">
     <h2>Login</h2>
     <div class="input-field">
-      <label for="usuario">Usuário:</label>
-      <input type="text" id="usuario" name="usuario" required>
+      <label for="usuario">Email:</label>
+      <input type="text" id="email" name="email" required>
     </div>
     <div class="input-field">
       <label for="senha">Senha:</label>
       <input type="password" id="senha" name="senha" required>
     </div>
-    <button type="submit" name="submit">Entrar</button>
+    <input class="inputSumit" type="submit" name="submit" value="LOGIN">
   </form>
 </div>
 

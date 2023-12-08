@@ -43,7 +43,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f2f2f2;
+  background-color: #7FFFD4;
 }
 
 form {
@@ -99,7 +99,7 @@ button:hover {
     </style>
 </head>
 <body>
-
+<a href="<?=linkrota()?>"><img src="<?=URL_BASE.'public/imagens/logo.gif'?>"></a><br><br>
 <form action="http://localhost/projetovaipronde/app/Views/login.view.php" method="POST">
   <h2>Cadastre-se</h2>
   <div>
@@ -115,7 +115,7 @@ button:hover {
     <input type="password" id="senha" name="senha" required>
   </div>
   <div>
-    <button type="submit" name="submit">Cadastrar</button>
+   <a href="<?=linkrota('cadastro')?>"> <button type="submit" name="submit">Cadastrar</button></a>
   </div>
 </form>
 
@@ -235,4 +235,4 @@ crossorigin="anonymous">
   </body>
 </html>
 
--->
+--> 
