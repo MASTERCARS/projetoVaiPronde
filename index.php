@@ -25,12 +25,9 @@ function linkrota($rota = "")
 }
 
 $url = $_GET['url'] ?? "";
-
-
-//vizualizar no git hub
-
 Router::exec($url);
 
-//teste2
+
+
 
 
