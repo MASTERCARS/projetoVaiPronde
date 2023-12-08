@@ -31,6 +31,6 @@ $url = $_GET['url'] ?? "";
 
 Router::exec($url);
 
-
+//teste2
 
 
