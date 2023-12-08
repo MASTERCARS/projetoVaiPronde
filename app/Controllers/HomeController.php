@@ -69,7 +69,11 @@ class HomeController extends Controller{
       $dados = ['titulo' => 'Projeto VaiPronde 2023'];
       $this->view('testar',$dados);
     }
-   
+    public function cadastro()
+    {
+      $dados = ['titulo' => 'Projeto VaiPronde 2023'];
+      $this->view('cadastro',$dados);
+    }
   }
 
 
